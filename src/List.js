@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import MyTable from "./MyTable";
 
 export const List = () => {
   const [users, setUsers] = useState([]);
@@ -22,7 +23,7 @@ export const List = () => {
   }, [inputData]);
 
   const handleInputChange = (event, field) => {
-    console.log({event, field})
+    console.log({ event, field });
     const inputClone = { ...inputData };
     inputClone[field] = event.target.value;
     setInputData(inputClone);
@@ -39,14 +40,16 @@ export const List = () => {
         // body: JSON.stringify({ data: inputData }),
       });
       const result = await response.json();
-      console.log("Success:", result);
+      const inputClone = { ...inputData };
+      inputClone.status = !inputClone.status;
+      setInputData(inputClone);
     } catch (error) {
       console.error("Error:", error);
     }
   };
 
   return (
-    <div style={{ width: "200px", margin: "0 auto" }}>
+    <div style={{ margin: "0 auto" }}>
       <input
         type="text"
         id="myInput"
@@ -78,18 +81,7 @@ export const List = () => {
       <button id="submitButton" onClick={handleSubmit}>
         Gửi
       </button>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <ul>
-          {users.map((user) => (
-            <li key={user.id}>
-              Nguoi thu {user.id}, Ten: {user.name}, Tuoi: {user.age}, Gioi
-              tinh: {user.gender}
-            </li>
-          ))}
-        </ul>
-      )}
+      {loading ? <p>Loading...</p> : <MyTable users={users} />}
     </div>
   );
 };

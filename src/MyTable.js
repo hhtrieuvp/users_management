@@ -1,27 +1,7 @@
 import React from 'react';
 import { Space, Table } from 'antd';
 
- const MyTable = () => {
-  const dataSource = [
-    {
-      key: '1',
-      name: 'John Doe',
-      age: 32,
-      address: 'New York, USA',
-    },
-    {
-      key: '2',
-      name: 'Jane Smith',
-      age: 28,
-      address: 'London, UK',
-    },
-    {
-      key: '3',
-      name: 'Ha Huu Trieu',
-      age: 30,
-      address: 'Vinh Phuc, VN',
-    }
-  ];
+ const MyTable = ({users}) => {
 
   const columns = [
     {
@@ -35,9 +15,9 @@ import { Space, Table } from 'antd';
       key: 'age',
     },
     {
-      title: 'Địa chỉ',
-      dataIndex: 'address',
-      key: 'address',
+      title: 'Giới tính',
+      dataIndex: 'gender',
+      key: 'gender',
     },
     {
       title: 'Hành động',
@@ -51,7 +31,7 @@ import { Space, Table } from 'antd';
     }
   ];
 
-  return <Table dataSource={dataSource} columns={columns} />;
+  return <Table dataSource={users} columns={columns} />;
 };
 
 export default MyTable;

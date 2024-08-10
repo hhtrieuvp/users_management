@@ -23,6 +23,18 @@
       "name": "Nguyen Van X",
       "age": 78,
       "gender": "Nam"
+    },
+    {
+      "id": "6",
+      "name": "Nguyen van D",
+      "age": "44",
+      "gender": "Nam"
+    },
+    {
+      "id": "ok ",
+      "name": "iki",
+      "age": "22",
+      "gender": "ma"
     }
   ]
-  }
+}
