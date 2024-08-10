@@ -1,0 +1,28 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "Ha Huu Trieu",
+      "age": 19,
+      "gender": "Nam"
+    },
+    {
+      "id": "2",
+      "name": "Nguyen Van A",
+      "age": 8,
+      "gender": "Nam"
+    },
+    {
+      "id": "3",
+      "name": "Nguyen  C",
+      "age": 6,
+      "gender": "Nu"
+    },
+    {
+      "id": "4",
+      "name": "Nguyen Van X",
+      "age": 78,
+      "gender": "Nam"
+    }
+  ]
+  }
