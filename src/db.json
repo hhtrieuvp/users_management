@@ -1,40 +1,15 @@
 {
   "user": [
     {
-      "id": "1",
-      "name": "Ha Huu Trieu",
-      "age": 19,
-      "gender": "Nam"
+      "id": "e2ed",
+      "role": "2"
     },
     {
-      "id": "2",
-      "name": "Nguyen Van A",
-      "age": 8,
-      "gender": "Nam"
+      "id": "5bb7"
     },
     {
-      "id": "3",
-      "name": "Nguyen  C",
-      "age": 6,
-      "gender": "Nu"
-    },
-    {
-      "id": "4",
-      "name": "Nguyen Van X",
-      "age": 78,
-      "gender": "Nam"
-    },
-    {
-      "id": "6",
-      "name": "Nguyen van D",
-      "age": "44",
-      "gender": "Nam"
-    },
-    {
-      "id": "ok ",
-      "name": "iki",
-      "age": "22",
-      "gender": "ma"
+      "id": "535e",
+      "role": "1"
     }
   ]
 }
